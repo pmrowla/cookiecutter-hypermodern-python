@@ -21,7 +21,7 @@ classifiers = [
 Changelog = "https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}/releases"
 
 [tool.poetry.dependencies]
-python = "^3.7"
+python = "^3.9"
 click = ">=8.0.1"
 
 [tool.poetry.dev-dependencies]
@@ -53,6 +53,9 @@ myst-parser = {version = ">=0.16.1"}
 [tool.poetry.scripts]
 {{cookiecutter.project_name}} = "{{cookiecutter.package_name}}.__main__:main"
 
+[tool.bandit]
+skips = ["B320"]
+
 [tool.coverage.paths]
 source = ["src", "*/site-packages"]
 tests = ["tests", "*/tests"]
@@ -67,7 +70,7 @@ fail_under = 100
 
 [tool.isort]
 profile = "black"
-force_single_line = true
+multi_line_output = 3
 lines_after_imports = 2
 
 [tool.mypy]
