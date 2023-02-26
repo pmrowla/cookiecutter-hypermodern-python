@@ -63,7 +63,7 @@ $ cookiecutter gh:pmrowla/cookiecutter-hypermodern-python --checkout=renovate
 - Generate command-line reference with [sphinx-click]
 - Manage project labels with [GitHub Labeler]
 
-The template supports 3.9, and 3.10.
+The template supports 3.9, 3.10 and 3.11.
 
 [autodoc]: https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html
 [bandit]: https://github.com/PyCQA/bandit
